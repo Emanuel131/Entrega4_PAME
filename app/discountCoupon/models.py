@@ -2,7 +2,7 @@ from app.extensions import db, Blueprint
 
 discount_coupon_api = Blueprint('discount_coupon_api', __name__)
 
-class DiscountCoupon:
+class DiscountCoupon(db.Model):
     __tablename__ = "discountCoupon"
 
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)

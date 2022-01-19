@@ -2,7 +2,7 @@ from app.extensions import db, Blueprint
 
 user_api = Blueprint('user_api', __name__)
 
-class User:
+class User(db.Model):
     __tablename__ = "user"
 
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)

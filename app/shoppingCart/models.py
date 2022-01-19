@@ -2,7 +2,7 @@ from app.extensions import db, Blueprint
 
 shopping_cart_api = Blueprint('shopping_cart_api', __name__)
 
-class ShoppingCart:
+class ShoppingCart(db.Model):
     __tablename__ = "shoppingCart"
 
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)

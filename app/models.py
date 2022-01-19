@@ -2,7 +2,7 @@ from app.extensions import db
 
 
 # Classe para ser herdada por Carro e Moto
-class Vehicle:
+class Vehicle(db.Model):
     __abstract__ = True
 
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
