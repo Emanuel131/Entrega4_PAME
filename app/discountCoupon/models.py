@@ -19,5 +19,5 @@ class DiscountCoupon(db.Model):
             "promotion_name":self.promotion_name,
             "discount_value":self.discount_value,
             "valid_through":self.valid_through,
-            "accepted_payment_method":self.accepted_payment_method,
+            "accepted_payment_method":self.accepted_payment_method
         }
